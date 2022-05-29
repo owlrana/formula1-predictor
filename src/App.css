@@ -1,0 +1,579 @@
+.App {
+  text-align: center;
+  font-family: 'Titillium Web';
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+#container2 {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  overflow: hidden;
+}
+
+#result {
+  position: absolute;
+  left: -16px;
+  top: -16px;
+  padding: 0;
+  margin: 0;
+}
+
+.blurScreen {
+  position: absolute;
+  width: 1440px;
+  height: 900px;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: -4px 0px 20px rgba(0, 0, 0, 0);
+  backdrop-filter: blur(25px);
+}
+
+#videobcg {
+  width: inherit;
+  height: inherit;
+  -o-filter: blur(15px);
+  filter: blur(0px);
+  object-fit: cover;
+  transform: scale(1.04);
+}
+
+#logo {
+  position: absolute;
+  width: 144px;
+  height: 72px;
+  left: 228px;
+  top: 128px;
+
+  filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 20));
+}
+
+#logoEnd {
+  position: absolute;
+  width: 144px;
+  height: 72px;
+  left: 1220px;
+  top: 60px;
+
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 100));
+}
+
+#modal {
+  /* modal */
+  position: absolute;
+  width: 600px;
+  height: 900px;
+  right: 0px;
+  top: 0px;
+
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+}
+
+.allMessages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  position: absolute;
+  width: 324px;
+  height: 340px;
+  left: 16px;
+  top: 16px;
+}
+
+.message {
+  width: 324px;
+  height: 60px;
+
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.5);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+  border-radius: 8px;
+}
+
+#message {
+  width: 324px;
+  height: 60px;
+
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.5);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: -4px 0px 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+  border-radius: 8px;
+}
+
+#designedDeveloped {
+  position: absolute;
+  width: 200px;
+  height: 24px;
+  left: 160px;
+  top: 204px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #000000;
+
+  color: #000000;
+}
+
+#boldText {
+  position: absolute;
+  width: 73px;
+  height: 24px;
+  left: 352px;
+  top: 204px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 20));
+  color: #000000;
+}
+
+#boldTextWhite {
+  position: absolute;
+  width: 73px;
+  height: 24px;
+  left: 352px;
+  top: 204px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 20));
+  color: #ffffff;
+}
+
+.messageText {
+  position: absolute;
+  width: 500px;
+  height: 24px;
+  left: 60px;
+  top: 18px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+
+  filter: drop-shadow(0px 0px 50px rgba(255, 255, 255, 20));
+  color: #000000;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 375px;
+  height: 400px;
+  left: 113px;
+  top: 312px;
+}
+
+.inputSelect {
+  width: 375px;
+  height: 40px;
+
+  background: rgba(255, 255, 255, 0.3);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-radius: 6px;
+}
+
+.inputSelect:hover {
+  width: 375px;
+  height: 40px;
+
+  background: rgba(255, 255, 255, 0.6);
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.inputText {
+  width: 42px;
+  height: 22px;
+
+  /* Body */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+
+  /* Black 60 */
+
+  color: rgba(17, 17, 19, 0.6);
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0; 
+}
+
+.form--button {
+
+  position: relative;
+  width: 375px;
+  margin-top: 24px;
+  height: 48px;
+
+  /* Black */
+
+  background: #111111;
+  border-radius: 6px;
+}
+
+.form--button:hover {
+
+  position: relative;
+  width: 375px;
+  margin-top: 24px;
+  height: 48px;
+
+  /* Black */
+
+  background: #d50000;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttonText {
+  width: 42px;
+  height: 22px;
+
+  /* Body */
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+
+  /* Black 60 */
+
+  color: white;
+
+
+  /* Inside auto layout */
+  font-family: 'Titillium Web';
+  font-weight: 600;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+
+
+#copyright {
+  position: absolute;
+  width: 381px;
+  height: 18px;
+  left: 110px;
+  top: 752px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #000000;
+
+}
+
+#authors {
+  position: absolute;
+  width: 381px;
+  height: 15px;
+  left: 110px;
+  top: 774px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+
+  color: #000000;
+
+}
+
+#cross {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+
+/* --------------------------------------------------- */
+/* ---------- START of animating circle CSS ---------- */
+/* --------------------------------------------------- */
+
+.success-animation { 
+  position: absolute;
+  left: 52px;
+  top: 12px;
+}
+
+.checkmark {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #fff;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #fff;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    position:absolute;
+    top: 5px;
+    right: 5px;
+    margin: 0 auto;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #fff;
+    fill: #4bb71b;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+ 
+}
+
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0%, 100% {
+        transform: none;
+    }
+
+    50% {
+        transform: scale3d(1.1, 1.1, 1);
+    }
+}
+
+@keyframes fill {
+    100% {
+        box-shadow: inset 0px 0px 0px 30px #4bb71b;
+    }
+}
+
+/* --------------------------------------------------- */
+/* ----------  END of animating circle CSS  ---------- */
+/* --------------------------------------------------- */
+
+/* --------------------------------------------------- */
+/* ---------- START of spinning spinner CSS ---------- */
+/* --------------------------------------------------- */
+
+.spinner {
+  position: absolute;
+  left: 8px;
+  top: 6px; 
+}
+
+.spinner .background {
+  fill: rgb(48, 173, 32);
+}
+.spinner .line {
+  animation: PacMan 5s infinite;
+  fill: none;
+  stroke: #ff0000;
+  stroke-width: 25;
+}
+.spinner .spinner {
+  animation: Spin 2s infinite linear;
+}
+@keyframes PacMan {
+  0% {
+    stroke-dasharray: 79px 79;
+  }
+  50% {
+    stroke-dasharray: 1px 79;
+  }
+  100% {
+    stroke-dasharray: 79px 79;
+  }
+}
+@keyframes Spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* --------------------------------------------------- */
+/* ---------- END of spinning spinner CSS ---------- */
+/* --------------------------------------------------- */
+
+#positionText {
+  position: absolute;
+  width: 278px;
+  height: 213px;
+  left: 62px;
+  top: 0px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 213px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+
+}
+
+#inText {
+  position: absolute;
+  width: 81px;
+  height: 122px;
+  left: 62px;
+  top: 213px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 122px;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+}
+
+#circuitText {
+  position: absolute;
+  width: 1013px;
+  height: 122px;
+  left: 159px;
+  top: 213px;
+
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 122px;
+  /* identical to box height */
+
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+#teamLogo {
+  position: absolute;
+  top: 420px;
+  left: 60px;
+  height: 360px;
+}
+
+#restartApp {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 1200px;
+  top: 680px;
+}
+
+#restartApp:hover {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 1200px;
+  top: 680px;
+
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 100));
+
+  cursor: pointer;
+}
+
+#restartApp {
+  animation: Spin 8s infinite linear;
+}
