@@ -1,6 +1,31 @@
-# Getting Started with Create React App
+# Formula1 - Results Prediction (Mimic) v0.5
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project aims to mimic Results Predictions of Formula 1 races, by taking input as teams, circuit, weather using React.
+
+It is developed in an organised manner while keeping in mind that one can easily connect their own prediction model with the backend easily as props/etc. are being passed around for access and can be made use of, in case you have your own prediction model.
+
+(NOTE: before running this project, after you've done cloning this repository, go to the project's public folder and copy/paste files from the .zip file located [Here](https://stdntpartners-my.sharepoint.com/:f:/g/personal/rahul_rana_studentambassadors_com/EnsVhJeiM95EjVX1hcydu2oBEF9qvnoBeXZljRAxNZxEfA?e=MAVaAA). This is because the media files were too large to be uploaded on GitHub, so unfortunately each user needs to transfer these files themselves)
+
+## Problems:
+- Public folder not available on Github, need to be downloaded from OneDrive link (mentioned in this document, check in description section above) (looking forward to fix soon)
+- Only supports 1600x900 screen size, run in full screen mode for best experience ([F11] windows or [Fn+F followed by Cmd+Shift+F] for MacOS). Not resposive design. No mobile support. (looking forward to fix soon)
+- Current version only mimics the backend and orchestrates the messages, does not predict in realtime (no bandwidth to fix any time soon, contributions are welcomed)
+
+## Future Features:
+- Contents of public folder to be hosted on other site to remove local dependencies
+- Responsive design
+- realtime prediction/connecting to databases
+- additional inputs such as tyre types/damage to car/no. of laps/strategy/fuel/etc.
+- Host-friendly version of this project that can be deployed on Netlify/Heroku/etc.
+
+## How to contribute?
+- Get in touch with me: Rahul Rana on [Twitter](https://twitter.com/owlrana) or [LinkedIn](https://www.linkedin.com/in/owlrana/) or [Mail me](mailto:me.rahulrana@outlook.com)
+- Make a pull request, mention all details of your contribution and problem you're solving
+- Can suggest more changes, add more features/problems
+
+## About the author
+I am senior undergrad from New Delhi, India. New to development, specifically React. Open to new learning/collaborations. 
+You can connect with me/read about me on [Twitter](https://twitter.com/owlrana) or [LinkedIn](https://www.linkedin.com/in/owlrana/).
 
 ## Available Scripts
 
