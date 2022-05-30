@@ -4,6 +4,8 @@ This project aims to mimic Results Predictions of Formula 1 races, by taking inp
 
 It is developed in an organised manner while keeping in mind that one can easily connect their own prediction model with the backend easily as props/etc. are being passed around for access and can be made use of, in case you have your own prediction model.
 
+![Project Screenshot](https://i.imgur.com/aFGrwKb.png)
+
 (NOTE: before running this project, after you've done cloning this repository, go to the project's public folder and copy/paste files from the .zip file located [Here](https://stdntpartners-my.sharepoint.com/:f:/g/personal/rahul_rana_studentambassadors_com/EnsVhJeiM95EjVX1hcydu2oBEF9qvnoBeXZljRAxNZxEfA?e=MAVaAA). This is because the media files were too large to be uploaded on GitHub, so unfortunately each user needs to transfer these files themselves)
 
 ## Problems:
